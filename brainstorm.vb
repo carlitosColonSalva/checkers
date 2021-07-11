@@ -4,8 +4,9 @@ function gameOver() as boolean
 
 end function
 
-sub drawBoard()
+sub drawBoardOnScreen() 
   'grid is 64 squares (8x8)
+  ' how draw on console
 end sub
 
 sub initializePieces()
@@ -14,15 +15,15 @@ end sub
 
 sub movePiece()
   'player 1 moves up
-  'player 2 moves up
+  'player 2 moves down
   
   'pieces 'move diagonal
   'p1 moves y - 1 x +- 1
   'p2 moves y + 1 x +- 1
-  'unless x is zero
-  'p1 can unless y is zero
-  'p2 can unless y is 7
-  
+  'unless x is zero or x is 7
+  'p1 can move unless y is zero
+  'p2 can move unless y is 7
+  'king can move x +- 1 and y +- 1
 end sub
 
 sub eatEnemy()
